@@ -1,0 +1,31 @@
+.container{
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.toggle-Switch{
+    border: 2px solid black;
+    width: 300px;
+    padding: 20px;
+    height: 80px;
+    border-radius: 100px;
+    background-color: #ada4a4;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.switch{
+    border: 1px solid black;
+    width: 28%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 300px;
+    color: white;
+    position: relative;
+    /* background-color: #ff0000; */
+}

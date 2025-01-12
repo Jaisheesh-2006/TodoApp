@@ -1,0 +1,28 @@
+.card{
+    max-height: 1000px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 400px;
+    /* border: 1px solid rgb(199, 196, 196); */
+    box-shadow: 3px 2px 10px 2px rgb(149, 150, 148);
+    list-style: none;
+    /* padding: 5px; */
+    margin: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: medium;
+    
+    /* row-gap: 2px; */
+
+    
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 15px;
+}
+.text-content{
+    margin: 15px;
+    
+    
+}
