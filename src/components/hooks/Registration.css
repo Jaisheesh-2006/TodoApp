@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-color: rgb(220 215 215);
+}
+
+.container {
+    background-color: white;
+    height: 500px;
+    border: 2px solid red;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px 10px grey;
+
+    width: 500px;
+    margin: auto;
+    /* Required for vertical centering */
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+}

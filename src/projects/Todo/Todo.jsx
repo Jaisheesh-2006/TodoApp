@@ -1,20 +1,21 @@
 import React, { useState} from "react";
-
 import "./Todo.css";
 import TodoForm from "./TodoForm";
 import TodoList from "./TodoList";
 import TodoDate from "./TodoDate";
+
 const Todo = () => {
-  const todoKey="reactTodo"
+  const todoKey="reactTodo" //*Key for item stored in local storage
+
   const [task, setTask] = useState(()=>{
     const rawTodo=localStorage.getItem(todoKey);
-
     if(!rawTodo) return []
     return JSON.parse(rawTodo)
   });
   
   //todo add to local storage
   localStorage.setItem("reactTodo",JSON.stringify(task))
+  
   const handleSubmit = (inputValue) => {
     const {id,content,checked}=inputValue
     if (!content) return; //empty string, dont add it

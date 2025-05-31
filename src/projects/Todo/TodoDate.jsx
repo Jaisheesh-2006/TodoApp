@@ -1,6 +1,5 @@
 import { useState,useEffect } from 'react';
 
-
 const TodoDate = () => {
      //todo Date and time
     const [dateTime, setDateTime] = useState("");
@@ -16,6 +15,8 @@ const TodoDate = () => {
           clearInterval(interval);
         };
       }, []);
+
+      
   return (
     <h2>{dateTime}</h2>
   )
